@@ -16,7 +16,7 @@ namespace Bookbox.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+   /* [Authorize]*/
     public class AuthorsController : ControllerBase
 
     {
@@ -36,6 +36,7 @@ namespace Bookbox.Controllers
         }
 
         [HttpPost]
+       /* [Authorize(Roles = "Admin")]*/
         public async Task<IActionResult> Add([FromBody] AddAuthorDto addAuthorDto)
         {
             var author = await authorService.AddAuthorAsync(addAuthorDto);

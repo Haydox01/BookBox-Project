@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookboxUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5143e7f721135cfdb4e416a5c5b80d7bdb84621")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cac692a15ef70ccde3766883b81d3e8b8d50e8fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookboxUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookboxUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
