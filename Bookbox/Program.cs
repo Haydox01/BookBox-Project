@@ -71,11 +71,11 @@ builder.Services.AddSwaggerGen(options =>
     }); 
 });
 
-
-/*//Registering Repositories
+/*
+//Registering Repositories
 builder.Services.AddScoped<IBookRepository, BookRepository>();
-builder.Services.AddScoped<IAuthorRepository , AuthorRepository>();
-builder.Services.AddScoped<ITokenRepository, TokenRepository>();*/
+builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+*/builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 
 // Registering Services 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -135,8 +135,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
-app.UseMiddleware<GlobalJsonRequestFormatRequirementMiddleware>();
+/*app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
+app.UseMiddleware<GlobalJsonRequestFormatRequirementMiddleware>();*/
 
 app.MapControllers();
 
